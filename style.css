@@ -18,6 +18,12 @@ img {
 	margin: auto;
 
 }
+
+button{
+	display: block;
+	margin: auto;
+}
+
 ul {
 	list-style-type: none;
 	margin: 0;
