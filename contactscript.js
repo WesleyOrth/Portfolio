@@ -1,3 +1,3 @@
 function contact() {
-	document.getElementById("0").innerHTML="firstname.lastname@filleremail.com";
+	document.getElementById("0").innerHTML="firstnamelastname2022@u.northwestern.edu";
 }
