@@ -27,7 +27,7 @@ $(document).ready(function(){
 	{
 		var length = 5;
 		snake_array = [];
-		for(var i = length -1; i>=0; i--)
+		for(var i = length-1; i>=0; i--)
 		{
 			snake_array.push({x:i,y:0});
 		}
@@ -58,32 +58,32 @@ $(document).ready(function(){
 
 		if(nx == -1 || nx == w/cw || ny == -1 || ny == h/cw || check_collision)nx,ny,snake_array))
 	
-	{
+		{
 		init()
 		return;
-	}
-	if(nx == food.x && ny == food.y)
-	{
-		var tail = (x:nx,y:ny);
-		score ++;
-		create_food();
-	}
-	else
-	{
-		var tail = snake_array.pop();
-		tail.x = nx; tail.y = ny;
-	}
+		}
+		if(nx == food.x && ny == food.y)
+		{
+			var tail = (x:nx,y:ny);
+			score ++;
+			create_food();
+		}
+		else
+		{
+			var tail = snake_array.pop();
+			tail.x = nx; tail.y = ny;
+		}
 
-	snake_array.unshift(tail);
+		snake_array.unshift(tail);
 
-	for(var i = 0;i<snake_array.length;i++)
-	{
-		var c = snake_array[i];
-		paint_cell(c.x,c.y);
-	}
-	paint_cell(food.x,food.y);
-	var score_text ="Score:" + score;
-	ctx.fillText(score_text,5,h-5);
+		for(var i = 0;i<snake_array.length;i++)
+		{
+			var c = snake_array[i];
+			paint_cell(c.x,c.y);
+		}
+		paint_cell(food.x,food.y);
+		var score_text ="Score:" + score;
+		ctx.fillText(score_text,5,h-5);
 	}
 
 	function paint_cell(x,y)
@@ -110,4 +110,5 @@ $(document).ready(function(){
 		else if(key == "40" && d != "up") d = "down";
 
 	})
+	
 })
