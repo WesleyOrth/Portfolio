@@ -1,5 +1,5 @@
 /*Style Sheet for WesWeb*/
-
+<style>
 body{
 	 background-color: #5e8ad1 ;
 	 font-family: "Palatino Linotype", Palatino, serif;
@@ -35,3 +35,4 @@ li a:hover {
 li:last-child {
 	border-right: none;
 }
+</style>
