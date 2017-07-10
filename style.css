@@ -1,5 +1,4 @@
 /*Style Sheet for WesWeb*/
-<style>
 body{
 	 background-color: #5e8ad1 ;
 	 font-family: "Palatino Linotype", Palatino, serif;
@@ -11,10 +10,11 @@ ul {
 	margin: 0;
 	padding:0;
 	overflow: hidden;
-	background-color: #00173d;
+	background-color: #5e8ad1 ;
 	position: fixed;
 	top: 0;
 	width: 100%;
+
 }
 li {
 	float: left;
@@ -24,7 +24,7 @@ li a {
 	display: block;
 	color: white;
 	text-align: center;
-	padding: 14px 16px;
+	padding: 14px 14px;
 	text-decoration: none;
 }
 
