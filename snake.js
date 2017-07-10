@@ -56,15 +56,15 @@ $(document).ready(function(){
 		else if(d == "up") ny --;
 		else if(d == "down") ny ++;
 
-		if(nx == -1 || nx == w/cw || ny == -1 || ny == h/cw || check_collision)nx,ny,snake_array))
+		if(nx == -1 || nx == w/cw || ny == -1 || ny == h/cw || check_collision(nx,ny,snake_array))
 	
 		{
-		init()
+		init();
 		return;
 		}
 		if(nx == food.x && ny == food.y)
 		{
-			var tail = (x:nx,y:ny);
+			var tail = {x:nx,y:ny};
 			score ++;
 			create_food();
 		}
@@ -103,12 +103,12 @@ $(document).ready(function(){
 		return false;
 	}
 	$(document).keydown(function(e){
-		var key = e.which
+		var key = e.which;
 		if(key == "37" && d != "right") d = "left";
 		else if(key == "38" && d != "down") d = "up";
 		else if(key == "39" && d != "left") d = "right";
 		else if(key == "40" && d != "up") d = "down";
 
 	})
-	
+
 })
