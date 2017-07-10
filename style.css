@@ -19,6 +19,10 @@ img {
 
 }
 
+button{
+    margin: 0 auto;
+}
+
 ul {
 	list-style-type: none;
 	margin: 0;
