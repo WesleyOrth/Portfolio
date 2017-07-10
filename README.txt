@@ -10,3 +10,4 @@ index.html
 research.html
 style.css
 contactscript.js
+CV.pdf
