@@ -5,6 +5,19 @@ body{
 
 }
 
+p {
+	text-align:center;
+}
+
+h1 {
+	text-align:center;
+}
+
+img {
+	display: block;
+	margin: auto;
+
+}
 ul {
 	list-style-type: none;
 	margin: 0;
@@ -14,7 +27,7 @@ ul {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	
+
 }
 li {
 	float: left;
